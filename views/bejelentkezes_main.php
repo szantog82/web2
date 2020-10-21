@@ -11,7 +11,7 @@ $menu->main();
     <input type="text" name="login" class="form-control"><br>
     <label>Jelszo:</label>
     <input type="password" name="password" class="form-control"><br>
-    <input type="submit">
+    <input type="submit" class="btn btn-success" value="Küldés">
   </form>
 <a href="<?= SITE_ROOT ?>regisztracio">Regisztracio</a>
 </div>

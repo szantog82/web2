@@ -38,7 +38,7 @@ else
     echo "</div>";
 }
 ?>
-        <input type="submit" class="btn btn-success" />
+        <input type="submit" class="btn btn-success" value="Küldés"/>
       </form>
 </div>
 

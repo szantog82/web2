@@ -34,7 +34,7 @@ $query = "select * from ceg";
      $i++;
     }
     ?>
-    <input type="submit">
+    <input type="submit" class="btn btn-success" value="Küldés">
   </form>
 </div>
 </div>
