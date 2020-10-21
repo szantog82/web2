@@ -63,10 +63,10 @@ class Blog_view
 ?>
             <div class="form-group">
               <div class="form-group">
-                <label for="comment">Comment:</label>
+                <label for="comment">Komment írása:</label>
                 <textarea class="form-control" rows="5" id="comment" name="comment" style="resize: none;"></textarea>
               </div>
-              <button class="btn btn-default" onclick="commentSubmitValidate()">Kuldes</button>
+              <button class="btn btn-default" onclick="commentSubmitValidate()">Küldés</button>
            </div>
           </div>
         <?php

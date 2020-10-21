@@ -8,10 +8,10 @@ $query = "select * from ceg";
 <script src="https://cdn.ckeditor.com/4.11.4/standard-all/ckeditor.js"></script>
 <body>
 <div class="container">      
-<h3>Blogbejegyzes feltoltese</h3>
+<h3>Blogbejegyzés feltöltése</h3>
 <form action="<?= SITE_ROOT ?>blog_feltolt" method="POST" onsubmit="return blogSubmitValidate();">
-        <label>Bejegyzes cime:</label> <input type="text" class="form-control" name="blog_cim" id="blog_cim">
-        <label>Szoveg:</label>
+        <label>Bejegyzés cime:</label> <input type="text" class="form-control" name="blog_cim" id="blog_cim">
+        <label>Szöveg:</label>
         <textarea class="form-control" rows="10" id="blog_text" name="blog_text"></textarea>
         <?php
 $i = 1;

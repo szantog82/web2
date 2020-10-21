@@ -8,18 +8,18 @@ $conn = $d->get_connection();
 $query = "select * from ceg";
 ?>
 <div class="container">
-<h1>Regisztracio</h1>
+<h1>Regisztráció</h1>
 <div class="container col-sm-6">
   <form method="POST" action="<?= SITE_ROOT ?>register" class="form-group">
-    <label>Felhasznalo nev:</label>
+    <label>Felhasználo név:</label>
     <input type="text" name="login" class="form-control"><br>
-    <label>Email cim:</label>
+    <label>Email cím:</label>
     <input type="email" name="email" class="form-control"><br>
-    <label>Jelszo:</label>
+    <label>Jelszó:</label>
     <input type="password" name="password" class="form-control"><br>
-    <label>Ceg:</label>
+    <label>Cég:</label>
     <div class='radio'>
-     <label><input type='radio' name='radio_ceg' value='-1' checked>Latogato</label>
+     <label><input type='radio' name='radio_ceg' value='-1' checked>Látogató</label>
      </div>
     <?php
     $i = 1;

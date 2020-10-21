@@ -40,7 +40,7 @@ foreach ($conn->query($query) as $q) {
 });
         
     </script>
-          <h4 id="aaa">Regisztralt cegek</h4>
+          <h4 id="aaa">Regisztrált cégek</h4>
           <?php
           $options = array(
             "location" => SITE_ROOT . "server/soap.php",

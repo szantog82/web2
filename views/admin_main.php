@@ -10,16 +10,16 @@ $menu = new Menu("Admin");
 <div class="container">
 <h3>Admin oldal</h3>
 <div class="container-block bg-success">
-    <h4 style="color: darkred;">Felhasznalok kezelese</h4>
+    <h4 style="color: darkred;">Felhasználók kezelése</h4>
     <table class="table">
       <thead>
       <tr>
-        <th>Nev</th>
+        <th>Név</th>
         <th>Email</th>
-        <th>Ceg</th>
-        <th>Jogosultsag</th>
-        <th>Aktiv-e</th>
-        <th>Torles</th>
+        <th>Cég</th>
+        <th>Jogosultság</th>
+        <th>Aktív-e</th>
+        <th>Törlés</th>
       </tr>
     </thead>
     <tbody>
@@ -51,7 +51,7 @@ foreach ($result as $r){
     echo "<label class='radio-inline'><input type='radio' class='felhasznalo' name='" . $r["Id"] . "' value='1' " . $aktiv_checked . ">Aktiv</label>\n";
     echo "<label class='radio-inline'><input type='radio' class='felhasznalo' name='" . $r["Id"] . "' value='0' " . $disabled_checked . ">Letiltva</label>\n";
     echo "</td>"; 
-    echo "<td><button class='btn btn-danger torles' id='" . $r["Id"] . "'>Torles</Button>\n";
+    echo "<td><button class='btn btn-danger torles' id='" . $r["Id"] . "'>Törlés</Button>\n";
     echo"</tr>";
 }
 
@@ -60,11 +60,11 @@ foreach ($result as $r){
     </table>
   </div>
     <div class="container-block bg-success">
-    <h4 style="color: darkred;">Cegek kezelese</h4>
+    <h4 style="color: darkred;">Cégek kezelése</h4>
     <table class="table">
       <thead>
       <tr>
-        <th>Cegnev</th>
+        <th>Cégnev</th>
       </tr>
     </thead>
     <tbody id="ceg_table_body">
@@ -80,9 +80,9 @@ foreach ($result as $r){
     </table>
       </div>
     <div>
-      <label>Uj ceg neve:</label>
+      <label>Új cég neve:</label>
       <input type="text" name="uj_ceg" id="uj_ceg">
-      <button class="btn btn-success" id="ceg_hozzaad_btn">Hozzaad</button>
+      <button class="btn btn-success" id="ceg_hozzaad_btn">Hozzáad</button>
     </div>
  </div>
 

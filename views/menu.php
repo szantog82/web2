@@ -66,7 +66,7 @@ class Menu
         
     </style>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
-  <title>Novenytermesztok oldala</title>
+  <title>Növénytermesztők oldala</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
@@ -130,11 +130,11 @@ class Menu
       var title = $("#blog_cim").val();
       var text = CKEDITOR.instances["blog_text"].getData();
       if (title.length < 2) {
-        alert("Hianyzik a cim!");
+        alert("Hiányzik a cím!");
         valid = false;
       }
       if (text.length < 2) {
-        alert("Hianyzik a szoveg!");
+        alert("Hiányzik a szöveg!");
         valid = false;
       }
       return valid;
@@ -297,17 +297,17 @@ class Menu
         <?php
         if (isset($_SESSION["nev"]) && !empty($_SESSION["nev"]))
         {
-            echo "<li><a href='#' style='color: yellow; font-style: italic;'>Udvozollek, " . $_SESSION["nev"]  . "</a></li>";
+            echo "<li><a href='#' style='color: yellow; font-style: italic;'>Üdvözöllek, " . $_SESSION["nev"]  . "</a></li>";
             if ($_SESSION["jogosultsag_id"] < 3){
-             echo "<li><a href='" . SITE_ROOT . "blogfeltoltes'>Uj blogbejegyzes</a></li>";
+             echo "<li><a href='" . SITE_ROOT . "blogfeltoltes'>Új blogbejegyzés</a></li>";
             }
 
-            echo "<li><a href='" . SITE_ROOT . "kijelentkezes'><span class='glyphicon glyphicon-log-out'></span> Kijelentkezes</a></li>";
+            echo "<li><a href='" . SITE_ROOT . "kijelentkezes'><span class='glyphicon glyphicon-log-out'></span> Kijelentkezés</a></li>";
         }
         else
         {
-            echo "<li><a href='#' style='color: yellow; font-style: italic;'>Vendeg</a></li>";
-            echo "<li><a href='" . SITE_ROOT . "bejelentkezes'><span class='glyphicon glyphicon-log-in'></span> Bejelentkezes</a></li>";
+            echo "<li><a href='#' style='color: yellow; font-style: italic;'>Vendég</a></li>";
+            echo "<li><a href='" . SITE_ROOT . "bejelentkezes'><span class='glyphicon glyphicon-log-in'></span> Bejelentkezés</a></li>";
         }
 ?>
       </ul>
